@@ -1,14 +1,14 @@
-# Run and deploy your AI Studio app
+# Como hacer correr el Proyecto
 
-This contains everything you need to run your app locally.
+Contiene información de como correr de manera local tu app.
 
-## Run Locally
+## Para que corra localmente
 
-**Prerequisites:**  Node.js
+**Pre-requisitos:**  Node.js
 
 
-1. Install dependencies:
+1. Instala las dependencias:
    `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
+2. Establece tu `GEMINI_API_KEY` en [.env.local](.env.local)
+3. Corre la app con:
    `npm run dev`
