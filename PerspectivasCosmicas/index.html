@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perspectivas Cósmicas - Horóscopo Diario</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              'playfair': ['"Playfair Display"', 'serif'],
+              'roboto': ['Roboto', 'sans-serif'],
+            },
+            colors: {
+              'celestial-blue': '#0f172a', // slate-900
+              'deep-purple': '#3b0764',
+              'star-gold': '#FFD700',
+              'light-silver': '#E0E0E0',
+              'cosmic-lavender': '#E6E6FA',
+            },
+            backgroundImage: {
+              'cosmic-gradient': 'linear-gradient(135deg, #0f172a 0%, #3b0764 100%)',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Roboto', sans-serif;
+      }
+      h1, h2, h3, .font-display {
+        font-family: 'Playfair Display', serif;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.0.1"
+  }
+}
+</script>
+</head>
+  <body class="bg-cosmic-gradient text-light-silver min-h-screen flex items-center justify-center p-4">
+    <div id="root"></div>
+  </body>
+</html><link rel="stylesheet" href="index.css">
+<script src="index.tsx" type="module"></script>

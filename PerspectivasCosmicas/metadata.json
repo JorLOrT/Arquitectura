@@ -1,0 +1,6 @@
+
+{
+  "name": "Perspectivas Cósmicas - Horóscopo Diario",
+  "description": "Una aplicación web simple y elegante que proporciona predicciones diarias del horóscopo utilizando la API de Gemini. Selecciona tu signo zodiacal y descubre lo que las estrellas tienen reservado para ti hoy.",
+  "requestFramePermissions": []
+}
