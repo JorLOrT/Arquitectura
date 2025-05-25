@@ -1,10 +1,9 @@
-// VIEW: Responsible for rendering the UI and handling user interactions.
 import React, { useEffect } from 'react';
 import { useHoroscopeViewModel } from '../viewmodels/useHoroscopeViewModel';
-import ZodiacSignSelector from './ZodiacSignSelector';
-import HoroscopeDisplay from './HoroscopeDisplay';
-import LoadingSpinner from './LoadingSpinner';
-import ErrorDisplay from './ErrorDisplay';
+import ZodiacSignSelector from '../components/ZodiacSignSelector';
+import HoroscopeDisplay from '../components/HoroscopeDisplay';
+import LoadingSpinner from '../../../components/common/LoadingSpinner';
+import ErrorDisplay from '../../../components/common/ErrorDisplay';
 
 const HoroscopeView: React.FC = () => {
   const {
@@ -81,15 +80,15 @@ const HoroscopeView: React.FC = () => {
             Por favor, selecciona un signo zodiacal para comenzar tu viaje cósmico amoroso.
           </p>
         )}
-         {/* Informational message if API key is missing from environment and an error occurred */}
         {error && error.includes("Clave API de Gemini no está configurada") && (
             <p className="text-center text-yellow-300/80 mt-4 text-sm" role="status">
-                La configuración de la aplicación parece estar incompleta (falta la Clave API). Por favor, contacta al administrador del sitio.
+                Los astros no colaboran. Por favor, contacta al administrador del sitio.
             </p>
         )}
       </main>
        <footer className="text-center mt-12 text-xs text-cosmic-lavender/50">
-        <p>&copy; {new Date().getFullYear()} Perspectivas Cósmicas. Impulsado por Magia Celestial.</p>
+        <p>&copy; {new Date().getFullYear()} Perspectivas Cósmicas. Impulsado por Magia Celestial y la API de Gemini.</p>
+        <p className="mt-1">Asegúrate de que la variable de entorno <code>API_KEY</code> esté configurada para que la aplicación funcione correctamente.</p>
       </footer>
     </div>
   );

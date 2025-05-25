@@ -1,4 +1,3 @@
-
 import { ZodiacSign } from './types';
 
 export const ZODIAC_SIGNS_ARRAY: ZodiacSign[] = [

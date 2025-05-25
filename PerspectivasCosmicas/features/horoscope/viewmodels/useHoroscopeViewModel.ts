@@ -1,8 +1,7 @@
-// VIEWMODEL: Manages the state and logic for the HoroscopeView.
 import { useState, useCallback } from 'react';
-import { ZodiacSign, HoroscopePrediction } from '../types';
-import { GeminiService } from '../services/GeminiService';
-import { ZODIAC_SIGNS_ARRAY } from '../constants';
+import { ZodiacSign, HoroscopePrediction } from '../../../types';
+import { HoroscopeService } from '../services/HoroscopeService';
+import { ZODIAC_SIGNS_ARRAY } from '../../../constants';
 
 export interface HoroscopeViewModel {
   selectedSign: ZodiacSign | null;
@@ -39,7 +38,7 @@ export const useHoroscopeViewModel = (): HoroscopeViewModel => {
     setHoroscope(null);
 
     try {
-      const predictionText = await GeminiService.fetchHoroscope(selectedSign);
+      const predictionText = await HoroscopeService.fetchHoroscope(selectedSign);
       const today = new Date().toLocaleDateString('es-ES', {
         year: 'numeric',
         month: 'long',

@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { HoroscopePrediction } from '../types';
+import { HoroscopePrediction } from '../../../types';
 
 interface HoroscopeDisplayProps {
   horoscope: HoroscopePrediction;

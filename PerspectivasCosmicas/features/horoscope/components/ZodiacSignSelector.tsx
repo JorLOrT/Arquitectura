@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { ZodiacSign } from '../types';
+import { ZodiacSign } from '../../../types';
 
 interface ZodiacSignSelectorProps {
   signs: ZodiacSign[];

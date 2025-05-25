@@ -9,6 +9,7 @@ Contiene información de como correr de manera local tu app.
 
 1. Instala las dependencias:
    `npm install`
+   `npm install --save-dev @types/react @types/react-dom`
 2. Establece tu `GEMINI_API_KEY` en [.env.local](.env.local)
 3. Corre la app con:
    `npm run dev`

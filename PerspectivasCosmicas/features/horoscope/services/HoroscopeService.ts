@@ -1,9 +1,8 @@
-// MODEL: Handles data fetching and business logic for horoscopes.
 import { GoogleGenAI, GenerateContentResponse } from "@google/genai";
-import { ZodiacSign } from '../types';
-import { GEMINI_API_MODEL } from '../constants';
+import { ZodiacSign } from '../../../types';
+import { GEMINI_API_MODEL } from '../../../constants';
 
-export class GeminiService {
+export class HoroscopeService {
   static async fetchHoroscope(sign: ZodiacSign): Promise<string> {
     const apiKeyFromEnv = process.env.API_KEY;
 
